@@ -16,10 +16,16 @@ _playlists_path = 'https://raw.githubusercontent.com/marcvanzee/spotify-playlist
 
 _playlists = {}
 
+_playlists_by_track = {}
+
 // -------------- functions
 
 function setHtml(fieldId, text) {
   document.getElementById(fieldId).innerHTML = text
+}
+
+function getTrackKey(track) {
+  return track.artist + ' - ' + track.name;
 }
 
 function initGetPlaylists() {
@@ -55,9 +61,21 @@ function initAnalyzePlaylist() {
     container.appendChild(label);
   }
 
+  function addTracksToIndex(playlist) {
+    for (const track of playlist.tracks) {
+      key = getTrackKey(track);
+      if (key in _playlists_by_track) {
+        _playlists_by_track[key].push(playlist.id);
+      } else {
+        _playlists_by_track[key] = [playlist.id];
+      }
+    }
+  }
+
   fetch(_playlists_path)
     .then((response) => response.json())
     .then((json) => {
+      console.log(json);
       html = `Successfully retrieved ${json.length} playlists from
               <a href="${_playlists_path}">${_playlists_path}</a>, which is
               generated using <a href="get_playlists.html">get_playlists.html</a>`
@@ -69,13 +87,14 @@ function initAnalyzePlaylist() {
         const name = `${playlist.name} by ${playlist.user}`
         addOption(select, name, playlist.id);
         const div = document.createElement('div');
-        addCheckboxWithLabel(div, name, playlist.id);
+        addCheckboxWithLabel(div, name, 'ch_' + playlist.id);
         fieldset.appendChild(div);
+        addTracksToIndex(playlist);
       });
       _playlists = json;
+
     })
 }
-
 
 async function fetchWebApi(endpoint, method, body) {
   const res = await fetch(`https://api.spotify.com/${endpoint}`, {
@@ -165,27 +184,68 @@ async function getAllPlaylists() {
 }
 
 async function analyzePlaylist() {
-  console.log(_playlists)
-
   const options = document.getElementById('playlist-selector').options;
   const playlist = _playlists[options[options.selectedIndex].id];
 
-  html = `<h2>Analysis of ${playlist.name} by ${playlist.user}`;
+  let other_playlists = Object.keys(_playlists).filter(id => 
+    document.getElementById('ch_'+id).checked && id != playlist.id);
 
-  const num_tracks = playlist.tracks.total;
+  console.log(playlist.id)
 
-  artists_count = {}
-  for (const t of playlist.tracks) {
-    artist = t.track.artists.map((artist) => artist.name).join('_');
-    if (artist in artists_count) {
-      artists_count[artist]++;
+  console.log('other_playlists', other_playlists)
+
+  html = `<h2>Analysis of ${playlist.name} by ${playlist.user}</h2>`;
+
+  const num_tracks = playlist.tracks.length;
+  html += '<p><b>total tracks: </b>' + num_tracks + '</p>'
+
+  artists_count = {};
+  duplicates = {};
+  for (const track of playlist.tracks) {
+    trackKey = getTrackKey(track);
+    playlistsWithTrack = _playlists_by_track[trackKey]
+        .filter(id => other_playlists.includes(id))
+        .map(id => _playlists[id])
+    
+    if (playlistsWithTrack.length > 0) {
+      duplicates[trackKey] = playlistsWithTrack;
+    }
+
+    if (track.artist in artists_count) {
+      artists_count[track.artist]++;
     } else {
-      artists_count[artist] = 1;
+      artists_count[track.artist] = 1;
     }
   }
 
   artists_count = Object.fromEntries(Object.entries(artists_count).filter(([k,v]) => v>1));
 
-  console.log('total tracks', num_tracks)
-  console.log(artists_count);
+  num_double_artists = Object.keys(artists_count).length;
+  if (num_double_artists == 0) {
+    html += `<p><b>NO</b> artists occur more than once (GOOD!!!)`;
+  } else {
+    html += `<b>${num_double_artists}</b> artists occur more than once (BAD!!!):`;
+    html += '<ul>';
+    for (const [artist, count] of Object.entries(artists_count)) {
+      html += `<li>${artist}: ${count} times</li>`;
+    }
+    html += '</ul>';
+  }
+
+
+  num_duplicates = Object.keys(duplicates).length;
+  if (num_duplicates == 0) {
+    html += '<p><b>ALL</b> tracks in this playlist are unique (VERY GOOD!!!!)';
+  } else {
+    html += `<p><b>${num_duplicates}</b> tracks also occur in previous playlists:`;
+    html += '<ul>'
+    for (const [trackKey, playlists] of Object.entries(duplicates)) {
+      playlists_html = playlists.map(p => `${p.name} by ${p.user}`).join('</li><li>')
+      playlists_html = '<ul><li>' + playlists_html + '</li></ul>'
+      html += `<li><i>${trackKey}</i>, also occurs in:` + playlists_html + '</li>'
+    }
+    html += '</ul>'
+  }
+
+  setHtml('analysis', html);
 }
