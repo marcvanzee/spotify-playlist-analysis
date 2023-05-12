@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spotify playlist analysis - Analyze playlist</title>
+    <style>
+      div.container {
+        padding: 5px;
+        overflow: hidden;
+      }
+      div.lhs {
+        width: 250px;
+        float: left;
+      }
+      div.rhs {
+        float: left;
+      }
+    </style>
+</head>
+ 
+<body>
+
+<h1>Analyze a Spotify playlist</h1>
+
+<h2>Settings</h2>
+
+<p>Enter the user and playlist name you would like to analyze.
+
+<div class="container">
+  <div class="lhs">Spotify username</div><div class="rhs"><input type="text" id="user"></div>
+</div>
+<div class="container">
+  <div class="lhs">Spotify playlist</div><div class="rhs"><input type="text" id="playlist"></div>
+</div></p>
+
+Select which playlists you would like to compare with.<br>
+The playlists a those found in file <i>playlists.json</i>, which should be
+generated using <a href="get_playlists.html">get_playlists.html</a>.
+
+<div id="playlists"></div>
+
+<p><button onclick="analyzePlaylist()">Analyze playlist</button></p>
+
+<h2>Analysis</h2>
+
+<div id="analysis"></div>
+
+</body> 
+
+<script src="script.js"></script>
+<script>
+fetch('./data.json')
+    .then((response) => response.json())
+    .then((json) => console.log(json));
+</script>
+  
+</html>
