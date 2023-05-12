@@ -1,0 +1,26 @@
+div.container {
+  padding: 5px;
+  overflow: hidden;
+}
+div.lhs {
+  width: 250px;
+  float: left;
+}
+div.rhs {
+  float: left;
+}
+
+h1 {
+  font: 2rem 'Fira Sans', sans-serif;
+}
+h2 {
+  font: 1.5rem 'Fira Sans', sans-serif;
+}
+
+p, label, div {
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
+input {
+  margin: 0.4rem;
+}
