@@ -47,20 +47,6 @@ function initAnalyzePlaylist() {
     select_field.add(option, select_field[-1]);
   }
 
-  function addCheckboxWithLabel(container, text, id) {
-    const checkbox = document.createElement('input');
-    checkbox.type = 'checkbox';
-    checkbox.id = id;
-    checkbox.name = text;
-    checkbox.checked = true;
-    container.appendChild(checkbox);
-
-    const label = document.createElement('label');
-    label.setAttribute('for', id);
-    label.innerHTML = text;
-    container.appendChild(label);
-  }
-
   function addTracksToIndex(playlist) {
     for (const track of playlist.tracks) {
       key = getTrackKey(track);
@@ -75,24 +61,18 @@ function initAnalyzePlaylist() {
   fetch(_playlists_path)
     .then((response) => response.json())
     .then((json) => {
-      console.log(json);
-      html = `Successfully retrieved ${json.length} playlists from
+      html = `Successfully retrieved ${Object.keys(json).length} playlists from
               <a href="${_playlists_path}">${_playlists_path}</a>, which is
               generated using <a href="get_playlists.html">get_playlists.html</a>`
       setHtml('status', html)
       document.getElementById('analyze-content').style.display = 'inline';
       const select = document.getElementById('playlist-selector');
-      const fieldset = document.getElementById('other-playlists');
       Object.values(json).map((playlist) => {
         const name = `${playlist.name} by ${playlist.user}`
         addOption(select, name, playlist.id);
-        const div = document.createElement('div');
-        addCheckboxWithLabel(div, name, 'ch_' + playlist.id);
-        fieldset.appendChild(div);
         addTracksToIndex(playlist);
       });
       _playlists = json;
-
     })
 }
 
@@ -178,7 +158,6 @@ async function getAllPlaylists() {
     all_playlists = all_playlists.concat(playlists);
   }
   setHtml('status', `<i>Done, found ${all_playlists.length} playlists!</i>`);
-  console.log('all playlists', all_playlists);
 
   writePlaylists(all_playlists);
 }
@@ -187,16 +166,16 @@ async function analyzePlaylist() {
   const options = document.getElementById('playlist-selector').options;
   const playlist = _playlists[options[options.selectedIndex].id];
 
-  let other_playlists = Object.keys(_playlists).filter(id => 
-    document.getElementById('ch_'+id).checked && id != playlist.id);
-
-  console.log(playlist.id)
-
-  console.log('other_playlists', other_playlists)
+  let other_playlists = Object.keys(_playlists).filter(id => id != playlist.id);
 
   html = `<h2>Analysis of ${playlist.name} by ${playlist.user}</h2>`;
 
-  const num_tracks = playlist.tracks.length;
+  let num_tracks = playlist.tracks.length;
+  if (num_tracks != 30) {
+    num_tracks += ' (BAD!! SHOULD BE 30)'
+  } else {
+    num_tracks += ' (GOOD!!)'
+  }
   html += '<p><b>total tracks: </b>' + num_tracks + '</p>'
 
   artists_count = {};
