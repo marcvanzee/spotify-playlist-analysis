@@ -51,7 +51,7 @@ generated using <a href="get_playlists.html">get_playlists.html</a>.
 
 <script src="script.js"></script>
 <script>
-fetch('./data.json')
+fetch('https://raw.githubusercontent.com/marcvanzee/spotify-playlist-analysis/main/data.json')
     .then((response) => response.json())
     .then((json) => console.log(json));
 </script>

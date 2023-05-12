@@ -1,11 +1,11 @@
 // Authorization token that must have been created previously. See : https://developer.spotify.com/documentation/web-api/concepts/authorization
-const token = 'BQD_wofc2-vLFP33hPWa3cl00V4U6kp0zN4hHzkTLlm-Zwm2TwXhWGPKWOD27mXD_84omuGkElGo2j5LRapVfqGnT7pQoTFhbqr78OrgYgDlazvcwTh2MiMGbAuquOY-vofC_Xtm-HqpT6XADZNIg87mwiO5ZWcmdl3uSk1la-_-kL-Uw6FlV1EgtBFshW9QYFhcg6PWtWNWOhZeOyowsYGbByojytjl7zNNN-8RNItrWdskVk1eK949y92MaP5-S_s';
+const token = 'BQBDgi6uZCWzT69MQeMQibwIyhdsZ5aY6X-8x15ok6J4LeqY_4182BgcSyIOQNSTQ0L1kc-dVOWPygBmKym-BpT4za2Y5RnmaXUEdsJIhXp3bTD834wM_cEBU2JmPcRemxk14XRI-u1UKLpYi306jtqbrasTTrzXFD6HhSW-JasZ8alq8GvQOVGrFztJ4He-y4R5KuGtM6YqBHBiUSZOUAsE7CiBv2hGzU5vnSNJs_QsBIhUWJot-n7hH4upEnPZg3Q';
 
 var _user_and_prefixes = {
   'marczoid': ['marcmix '],
   'joost_johnas': ['boys ', 'de boys gaan wat beleven', 'siem en marc gaan wat beleven'],
   'lilapause': ['de krochten'],
-  'reneesteinmann': ['beste discover weekly'],
+  'reneesteinmann': ['beste discover weekly', 'siems toppertjes'],
 }
 
 writeSettings();
@@ -38,7 +38,7 @@ async function fetchWebApi(endpoint, method, body) {
   return await res.json();
 }
 
-async function getIterative(url, filter_fn = (x) => x) {
+async function getIterative(url, filter_fn = (x) => x, just_one=true) {
   let result = []
   let offset = 0
   while (true) {
@@ -64,7 +64,7 @@ async function getIterative(url, filter_fn = (x) => x) {
 
 async function getPlaylistTracks(playlist_id) {
   tracks = await getIterative(
-      `v1/playlists/${playlist_id}/tracks`, filter_fn = (x) => x, true)
+      `v1/playlists/${playlist_id}/tracks`, filter_fn = (x) => x, false)
   tracks = tracks.map(({track}) => ({
     'artist': track.artists.map((artist) => artist.name).join('_'),
     'name': track.name,
@@ -73,7 +73,6 @@ async function getPlaylistTracks(playlist_id) {
 }
 
 async function run_analysis(playlist_id) {
-  document.getElementById('analysis').innerHTML = '<i>Running analysis...</i>'
 
   cur_playlist = playlists_by_id[playlist_id];
   html = `<h2>Analysis of ${cur_playlist.name}`;
@@ -120,22 +119,33 @@ async function getPlaylists(user) {
       'tracks': tracks,
     }
   }
-  playlists = await getIterative(
+  playlists = await Promise.all((await getIterative(
       `v1/users/${user}/playlists`,
-      keep_playlist_fn(playlist), true).map(process_playlist);
+      keep_playlist_fn, false)).map(process_playlist))
 
   return playlists;
 }
 
+function writePlaylists(playlists) {
+  var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(playlists, null, '  '));
+  var dlAnchorElem = document.getElementById('download');
+  dlAnchorElem.setAttribute("href", dataStr);
+  dlAnchorElem.setAttribute("download", "playlists.json");
+  dlAnchorElem.style.display = "inline";
+}
+
 
 async function getAllPlaylists() {
-  document.getElementById('playlists').innerHTML = '<i>Retrieving playlists...</i>';
+  setHtml('status', '<i>Retrieving playlists...</i>');
 
   all_playlists = []
   for (const user in _user_and_prefixes) {
-    all_playlists = all_playlists.concat(await getPlaylists(user));
+    setHtml('status', `<i>Getting playlists for ${user}...</i>`);
+    playlists = await getPlaylists(user);
+    all_playlists = all_playlists.concat(playlists);
   }
+  setHtml('status', `<i>Done, found ${all_playlists.length} playlists!</i>`);
   console.log('all playlists', all_playlists);
 
-  write_playlists(playlists_by_user);
+  writePlaylists(all_playlists);
 }
