@@ -1,4 +1,132 @@
 {
+  "204ePBl2GBuIEiTzY2mImN": {
+    "id": "204ePBl2GBuIEiTzY2mImN",
+    "name": "Marcmix Mai - July 2023",
+    "url": "https://open.spotify.com/playlist/204ePBl2GBuIEiTzY2mImN",
+    "user": "marczoid",
+    "tracks": [
+      {
+        "artist": "William DeVaughn",
+        "name": "Be Thankful for What You've Got - David Todd Remix"
+      },
+      {
+        "artist": "Twain",
+        "name": "Solar Pilgrim"
+      },
+      {
+        "artist": "Vampire Weekend",
+        "name": "Obvious Bicycle"
+      },
+      {
+        "artist": "Paul McCartney_Wings",
+        "name": "Let Me Roll It"
+      },
+      {
+        "artist": "Kelley Stoltz",
+        "name": "Prank Calls"
+      },
+      {
+        "artist": "Jonny Greenwood",
+        "name": "Licorice Pizza"
+      },
+      {
+        "artist": "Wooden Shjips",
+        "name": "Back to Land"
+      },
+      {
+        "artist": "The Orb",
+        "name": "Little Fluffy Clouds"
+      },
+      {
+        "artist": "Baby Dave",
+        "name": "Washing Machine"
+      },
+      {
+        "artist": "David Vandervelde",
+        "name": "Nothin' No"
+      },
+      {
+        "artist": "Frazey Ford",
+        "name": "September Fields"
+      },
+      {
+        "artist": "Roxy Music",
+        "name": "Manifesto"
+      },
+      {
+        "artist": "Travis Meadows",
+        "name": "Sideways"
+      },
+      {
+        "artist": "Parquet Courts",
+        "name": "Freebird II"
+      },
+      {
+        "artist": "Flying Lotus",
+        "name": "Crust"
+      },
+      {
+        "artist": "Foals",
+        "name": "2001"
+      },
+      {
+        "artist": "Sturgill Simpson",
+        "name": "Sam"
+      },
+      {
+        "artist": "Aske Stubkjær",
+        "name": "Udsigten"
+      },
+      {
+        "artist": "Dawn Brothers_DeWolff",
+        "name": "Neighbor"
+      },
+      {
+        "artist": "Rick Simpson_Dave Whitford_James Allsopp_Will Glaser_Tori Freestone",
+        "name": "How to Disappear Completely"
+      },
+      {
+        "artist": "Peter Sommer",
+        "name": "Valby Bakke"
+      },
+      {
+        "artist": "Jason Isbell",
+        "name": "Cover Me Up"
+      },
+      {
+        "artist": "Blake Mills",
+        "name": "If I'm Unworthy"
+      },
+      {
+        "artist": "Fruit Bats",
+        "name": "When U Love Somebody"
+      },
+      {
+        "artist": "Watchhouse",
+        "name": "Daylight"
+      },
+      {
+        "artist": "Elevatorfører",
+        "name": "1000 mg"
+      },
+      {
+        "artist": "The Felice Brothers",
+        "name": "Jazz on the Autobahn"
+      },
+      {
+        "artist": "The Brothers Johnson",
+        "name": "Strawberry Letter 23"
+      },
+      {
+        "artist": "Herbie Hancock",
+        "name": "Chameleon"
+      },
+      {
+        "artist": "Dudu Tassa_Jonny Greenwood_Nour Fretiekh",
+        "name": "Taq ou-Dub (feat. Nour Freteikh)"
+      }
+    ]
+  },
   "7wAc3SoAjpv2dCmSyvSwPL": {
     "id": "7wAc3SoAjpv2dCmSyvSwPL",
     "name": "Marcmix January - April 2023",
@@ -215,7 +343,7 @@
       },
       {
         "artist": "Liz Phair",
-        "name": "Mesmerizing - Remastered"
+        "name": "Mesmerizing - 2018 Remaster"
       },
       {
         "artist": "Blue Gas",
@@ -1874,7 +2002,7 @@
         "name": "Lebanon"
       },
       {
-        "artist": "Robert Plant_Alison Krauss",
+        "artist": "Dorothy La Bostrie_McKinley J. Millet_Robert Plant_Alison Krauss",
         "name": "Rich Woman"
       },
       {
@@ -3760,6 +3888,58 @@
       {
         "artist": "Tommy Emmanuel",
         "name": "Angelina"
+      },
+      {
+        "artist": "Amanda Bergman",
+        "name": "Taxis"
+      },
+      {
+        "artist": "The Electric Connection",
+        "name": "Groovy"
+      },
+      {
+        "artist": "Magnus",
+        "name": "Summer's Here"
+      },
+      {
+        "artist": "Desmond Cheese",
+        "name": "Scratch My Mind"
+      },
+      {
+        "artist": "The Tallest Man On Earth",
+        "name": "Every Little Heart"
+      },
+      {
+        "artist": "Febueder",
+        "name": "Brazillia"
+      },
+      {
+        "artist": "Fleetwood Mac",
+        "name": "Man of the World - 1998 Remaster"
+      },
+      {
+        "artist": "Alberto Bof_Stephanie Gilmore",
+        "name": "Giulia"
+      },
+      {
+        "artist": "Gotts Street Park_Pip Millett",
+        "name": "Change My Ways"
+      },
+      {
+        "artist": "John Mayer",
+        "name": "Wild Blue"
+      },
+      {
+        "artist": "Augustine",
+        "name": "Coast (Stripped)"
+      },
+      {
+        "artist": "iogi_Rejoicer",
+        "name": "Speeding Slower"
+      },
+      {
+        "artist": "Tapioca",
+        "name": "Melodia"
       }
     ]
   },
@@ -6430,8 +6610,24 @@
         "name": "Lying In The Sunshine"
       },
       {
-        "artist": "Discovery Zone",
-        "name": "Dance II"
+        "artist": "Young Marco",
+        "name": "What You Say? - Extended"
+      },
+      {
+        "artist": "Wooden Shjips",
+        "name": "These Shadows"
+      },
+      {
+        "artist": "Bob Sinclar",
+        "name": "Save Our Soul - Rework 2021"
+      },
+      {
+        "artist": "Los Bitchos",
+        "name": "Good to Go!"
+      },
+      {
+        "artist": "Underworld",
+        "name": "Jumbo"
       }
     ]
   },
@@ -6948,6 +7144,62 @@
       {
         "artist": "Leon Bridges",
         "name": "Coming Home"
+      },
+      {
+        "artist": "Marco Tansini",
+        "name": "Blues Garage"
+      },
+      {
+        "artist": "Jeremy Spencer",
+        "name": "Perilous Times"
+      },
+      {
+        "artist": "Snowy White_The White Flames",
+        "name": "Have I Got Blues for You"
+      },
+      {
+        "artist": "Melvin Taylor_Lucky Peterson_Titus Williams_Ray \"Killer\" Allison",
+        "name": "I 'll Play the Blues for You"
+      },
+      {
+        "artist": "Dawn Brothers_DeWolff",
+        "name": "What Kind of Woman"
+      },
+      {
+        "artist": "Josephien",
+        "name": "Talk To Me"
+      },
+      {
+        "artist": "Snowy White",
+        "name": "How Was It for You"
+      },
+      {
+        "artist": "Fenton Robinson",
+        "name": "You Don't Know What Love Is"
+      },
+      {
+        "artist": "Snowy White",
+        "name": "I Know What's Coming"
+      },
+      {
+        "artist": "Fenton Robinson",
+        "name": "As The Years Go Passing By"
+      },
+      {
+        "artist": "J.J. Cale",
+        "name": "Carry On"
+      },
+      {
+        "artist": "Offthewally",
+        "name": "Marmalade"
+      },
+      {
+        "artist": "Jan Rot",
+        "name": "Stel Dat Het Zou Kunnen"
+      },
+      {
+        "artist": "Fenton Robinson",
+        "name": "The Getaway"
       }
     ]
   },
