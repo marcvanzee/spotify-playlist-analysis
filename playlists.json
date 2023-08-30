@@ -1,7 +1,7 @@
 {
   "204ePBl2GBuIEiTzY2mImN": {
     "id": "204ePBl2GBuIEiTzY2mImN",
-    "name": "Marcmix Mai - July 2023",
+    "name": "Marcmix May - July 2023",
     "url": "https://open.spotify.com/playlist/204ePBl2GBuIEiTzY2mImN",
     "user": "marczoid",
     "tracks": [
@@ -26,16 +26,20 @@
         "name": "Prank Calls"
       },
       {
+        "artist": "The Orb",
+        "name": "Little Fluffy Clouds"
+      },
+      {
+        "artist": "Frazey Ford",
+        "name": "September Fields"
+      },
+      {
         "artist": "Jonny Greenwood",
         "name": "Licorice Pizza"
       },
       {
         "artist": "Wooden Shjips",
         "name": "Back to Land"
-      },
-      {
-        "artist": "The Orb",
-        "name": "Little Fluffy Clouds"
       },
       {
         "artist": "Baby Dave",
@@ -46,8 +50,8 @@
         "name": "Nothin' No"
       },
       {
-        "artist": "Frazey Ford",
-        "name": "September Fields"
+        "artist": "Flying Lotus",
+        "name": "Crust"
       },
       {
         "artist": "Roxy Music",
@@ -58,16 +62,8 @@
         "name": "Sideways"
       },
       {
-        "artist": "Parquet Courts",
-        "name": "Freebird II"
-      },
-      {
-        "artist": "Flying Lotus",
-        "name": "Crust"
-      },
-      {
-        "artist": "Foals",
-        "name": "2001"
+        "artist": "Herbie Hancock",
+        "name": "Chameleon"
       },
       {
         "artist": "Sturgill Simpson",
@@ -118,12 +114,16 @@
         "name": "Strawberry Letter 23"
       },
       {
-        "artist": "Herbie Hancock",
-        "name": "Chameleon"
+        "artist": "Parquet Courts",
+        "name": "Freebird II"
       },
       {
         "artist": "Dudu Tassa_Jonny Greenwood_Nour Fretiekh",
         "name": "Taq ou-Dub (feat. Nour Freteikh)"
+      },
+      {
+        "artist": "Foals",
+        "name": "2001"
       }
     ]
   },
@@ -513,7 +513,7 @@
   },
   "7x2pLZtDX8G3z0FKWoHq3K": {
     "id": "7x2pLZtDX8G3z0FKWoHq3K",
-    "name": "Marcmix May-June 2022 [ENTERING CPH]",
+    "name": "Marcmix May-June 2022 [ENTERING COPENHAGEN]",
     "url": "https://open.spotify.com/playlist/7x2pLZtDX8G3z0FKWoHq3K",
     "user": "marczoid",
     "tracks": [
@@ -3418,7 +3418,7 @@
         "name": "Tardei"
       },
       {
-        "artist": "Vulfpeck_Vulf",
+        "artist": "Vulfpeck",
         "name": "Wait for the Moment"
       },
       {
@@ -3940,6 +3940,78 @@
       {
         "artist": "Tapioca",
         "name": "Melodia"
+      },
+      {
+        "artist": "Henning",
+        "name": "Rock 'n' Roll"
+      },
+      {
+        "artist": "Tedeschi Trucks Band",
+        "name": "Midnight In Harlem (Swamp Raga intro with Little Martha) - Live"
+      },
+      {
+        "artist": "Sanullim",
+        "name": "가지 마"
+      },
+      {
+        "artist": "Det Stora Monstret",
+        "name": "Sätt Att Hålla Ut"
+      },
+      {
+        "artist": "Charles Watson",
+        "name": "Voices Carry Through the Mist"
+      },
+      {
+        "artist": "Laid Back",
+        "name": "Walk with the Dreamers"
+      },
+      {
+        "artist": "Rhonda",
+        "name": "Santa Barbara"
+      },
+      {
+        "artist": "Blaue Blume",
+        "name": "Lost Sons of Boys"
+      },
+      {
+        "artist": "AUFORI",
+        "name": "tiden bevæger mig"
+      },
+      {
+        "artist": "Søren Huss",
+        "name": "Ingen Appel"
+      },
+      {
+        "artist": "NEIL FRANCES",
+        "name": "Standing My Ground"
+      },
+      {
+        "artist": "Blur",
+        "name": "The Ballad"
+      },
+      {
+        "artist": "Matt Duncan",
+        "name": "The Keys"
+      },
+      {
+        "artist": "Sure Sure",
+        "name": "Fat Lady"
+      },
+      {
+        "artist": "Soap&Skin",
+        "name": "Mawal Jamar"
+      },
+      {
+        "artist": "MorMor",
+        "name": "Days Like This"
+      },
+      {
+        "artist": "Jan Lundgren Trio",
+        "name": "Golden Earrings"
+      },
+      {
+        "artist": "Fred again.._Obongjayar",
+        "name": "adore u"
       }
     ]
   },
@@ -5394,7 +5466,7 @@
         "name": "A Bird, A Bee, Humanity"
       },
       {
-        "artist": "F.S. Blumm_Nils Frahm",
+        "artist": "F.S.Blumm_Nils Frahm",
         "name": "Valentine My Funny"
       },
       {
@@ -6599,7 +6671,7 @@
       },
       {
         "artist": "LF SYSTEM",
-        "name": "Afraid To Feel"
+        "name": "Afraid to Feel"
       },
       {
         "artist": "Penguin Cafe",
@@ -6628,6 +6700,14 @@
       {
         "artist": "Underworld",
         "name": "Jumbo"
+      },
+      {
+        "artist": "Barry Can't Swim",
+        "name": "Like The Old Days"
+      },
+      {
+        "artist": "Aili_Transistorcake",
+        "name": "Dansu"
       }
     ]
   },
@@ -7200,6 +7280,70 @@
       {
         "artist": "Fenton Robinson",
         "name": "The Getaway"
+      },
+      {
+        "artist": "Andre Hazes",
+        "name": "Volgens Mij Ben Ik Getrouwd"
+      },
+      {
+        "artist": "Roy Buchanan",
+        "name": "Wayfaring Pilgrim"
+      },
+      {
+        "artist": "J.J. Cale",
+        "name": "Sensitive Kind"
+      },
+      {
+        "artist": "Jimmie Vaughan",
+        "name": "Just a Game"
+      },
+      {
+        "artist": "Charley Crockett",
+        "name": "Travelin' Blues"
+      },
+      {
+        "artist": "Jimmy Witherspoon",
+        "name": "Evenin'"
+      },
+      {
+        "artist": "Peter Green Splinter Group",
+        "name": "Feeling Good"
+      },
+      {
+        "artist": "Bill Wyman's Rhythm Kings",
+        "name": "Anyway the Wind Blows"
+      },
+      {
+        "artist": "Jonathan Wilson",
+        "name": "Fazon"
+      },
+      {
+        "artist": "Angels Of Libra_Nathan Johnston",
+        "name": "Curtis (Do You Wanna Be a Star?)"
+      },
+      {
+        "artist": "David Bowie",
+        "name": "China Girl - 2018 Remaster"
+      },
+      {
+        "artist": "Jeroen Kant",
+        "name": "Morgenstond"
+      },
+      {
+        "artist": "Snowy White_The White Flames",
+        "name": "Crazy Situation Blues"
+      },
+      {
+        "artist": "Gary O'Slide",
+        "name": "Monument Valley"
+      },
+      {
+        "artist": "Omar and The Howlers",
+        "name": "Hoo Doo"
+      },
+      {
+        "artist": "Van Morrison",
+        "name": "Into the Mystic - 2013 Remaster"
       }
     ]
   },
@@ -7519,7 +7663,7 @@
       },
       {
         "artist": "Maribou State_Khruangbin",
-        "name": "Feel Good (feat. Khruangbin)"
+        "name": "Feel Good"
       },
       {
         "artist": "Sharon Van Etten_Norah Jones",

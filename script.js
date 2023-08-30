@@ -1,7 +1,8 @@
 // -------------- globals
 
-// Authorization token that must have been created previously. See : https://developer.spotify.com/documentation/web-api/concepts/authorization
-const _token = 'BQCZBwRvWjnFyGnTEqa0SsRV7FM5N1FOCFtKuV2DPsrYr_4ktkO0mrvZK5tP3MY3vP-YPwA-4cjn1l5zKjxhrpmDjMl-NtcnZhV1y7xx0k-ohdgOuoDDHL5y5-6Svwm1ai8xE-nroGUhyiV-JSZQuO1_hkLr2-E3dbbgY_RD4g8Imi2GVSO_zFBnidILFSbfCSmsSCyPzqrdmIFhfJcpJk-gtVVbWE6fTRa50skJ0YE1TZbcVOCHYWC_Q0nHzZ8FOUA';
+// Go to https://developer.spotify.com/ and lgoin, then there should be a code demo, copy/paste the token here.
+const _token = 'BQAeJlTTMNsCuKVdZrjKjtPP_R2zNrsmEcGkdKVDoIt_Q1pCwDb99R6AjshXmzuT0lyX0hna3ieCGP1xpPu0YZOPSQCY3n1LyQaHRRR2W4ysoGedaAWz54f1uhsEyr0OD1oJoyPUpbmju2IRQFvgsgGN01iYMKwhMlluSRZPqhdKavRkAjIzFCa3RcNZmHNTTxu48tei3OfBllhIq2IFDg7Mx4spuhA5-na2nIITBJYlonLWOWbf1k0VualxbzGEag';
+
 
 var _user_and_prefixes = {
   'marczoid': ['marcmix '],
