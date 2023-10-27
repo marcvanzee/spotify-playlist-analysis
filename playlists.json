@@ -1,4 +1,132 @@
 {
+  "0f8wHDrWZSkuPdf9K89hBF": {
+    "id": "0f8wHDrWZSkuPdf9K89hBF",
+    "name": "Marcmix August - October 2023",
+    "url": "https://open.spotify.com/playlist/0f8wHDrWZSkuPdf9K89hBF",
+    "user": "marczoid",
+    "tracks": [
+      {
+        "artist": "Ibeyi_Pa Salieu",
+        "name": "Made of Gold"
+      },
+      {
+        "artist": "Elvin Jones_Richard Davis",
+        "name": "Elvin's Guitar Blues"
+      },
+      {
+        "artist": "Big Thief",
+        "name": "Certainty"
+      },
+      {
+        "artist": "Moondog",
+        "name": "Bird's Lament"
+      },
+      {
+        "artist": "SAULT",
+        "name": "Something's in the Air"
+      },
+      {
+        "artist": "The Pretty Things",
+        "name": "The Good Mr. Square"
+      },
+      {
+        "artist": "DOPE LEMON",
+        "name": "Home Soon"
+      },
+      {
+        "artist": "Masters Of Reality",
+        "name": "Rabbit One"
+      },
+      {
+        "artist": "Phil Cordell",
+        "name": "Red Lady"
+      },
+      {
+        "artist": "Baby Keem_Kendrick Lamar",
+        "name": "The Hillbillies"
+      },
+      {
+        "artist": "Lion",
+        "name": "You've Got a Woman"
+      },
+      {
+        "artist": "Beck",
+        "name": "Cellphone's Dead"
+      },
+      {
+        "artist": "Jonny Greenwood",
+        "name": "Prospectors Arrive"
+      },
+      {
+        "artist": "Riga Tiger",
+        "name": "Månen"
+      },
+      {
+        "artist": "Roxy Music",
+        "name": "Tara"
+      },
+      {
+        "artist": "CVC",
+        "name": "Sophie"
+      },
+      {
+        "artist": "Neutral Milk Hotel",
+        "name": "King of Carrot Flowers Pt. 1"
+      },
+      {
+        "artist": "Aphex Twin",
+        "name": "Avril 14th"
+      },
+      {
+        "artist": "Reginald Chapman_Foxygen",
+        "name": "There Is This Thing"
+      },
+      {
+        "artist": "Ian Brown",
+        "name": "First World Problems"
+      },
+      {
+        "artist": "Vulfpeck",
+        "name": "Dean Town"
+      },
+      {
+        "artist": "Muzz",
+        "name": "Nobody Wants a Lonely Heart"
+      },
+      {
+        "artist": "Noname",
+        "name": "Self"
+      },
+      {
+        "artist": "slowthai_Mura Masa",
+        "name": "Doorman"
+      },
+      {
+        "artist": "Solange",
+        "name": "Binz"
+      },
+      {
+        "artist": "Poni Hoax",
+        "name": "Everything Is Real"
+      },
+      {
+        "artist": "The Alchemist",
+        "name": "Arrival"
+      },
+      {
+        "artist": "Little Simz_Chronixx",
+        "name": "Wounds"
+      },
+      {
+        "artist": "KAYTRANADA_BADBADNOTGOOD",
+        "name": "WEIGHT OFF"
+      },
+      {
+        "artist": "Elliott Smith",
+        "name": "Between The Bars"
+      }
+    ]
+  },
   "204ePBl2GBuIEiTzY2mImN": {
     "id": "204ePBl2GBuIEiTzY2mImN",
     "name": "Marcmix May - July 2023",
@@ -74,7 +202,7 @@
         "name": "Udsigten"
       },
       {
-        "artist": "Dawn Brothers_DeWolff",
+        "artist": "Dawn Brothers_DeWolff_Double Cream",
         "name": "Neighbor"
       },
       {
@@ -3871,6 +3999,74 @@
       }
     ]
   },
+  "78ye8pP13r9GbOkgeOkJ9m": {
+    "id": "78ye8pP13r9GbOkgeOkJ9m",
+    "name": "BOYS 12",
+    "url": "https://open.spotify.com/playlist/78ye8pP13r9GbOkgeOkJ9m",
+    "user": "joost_johnas",
+    "tracks": [
+      {
+        "artist": "Kowloon",
+        "name": "Paradise"
+      },
+      {
+        "artist": "Wilson Pickett",
+        "name": "Land of 1000 Dances"
+      },
+      {
+        "artist": "Elliott Smith",
+        "name": "Angeles"
+      },
+      {
+        "artist": "Future Islands",
+        "name": "Little Dreamer"
+      },
+      {
+        "artist": "Teitur",
+        "name": "Louis, Louis"
+      },
+      {
+        "artist": "Young Franco_Franc Moody",
+        "name": "Daydreaming"
+      },
+      {
+        "artist": "Oracle Sisters_OurVinyl",
+        "name": "I Don't Wanna Move (OurVinyl Sessions)"
+      },
+      {
+        "artist": "Kowloon",
+        "name": "Back Again"
+      },
+      {
+        "artist": "Yumi Zouma",
+        "name": "Depths (Pt. I)"
+      },
+      {
+        "artist": "Turboweekend",
+        "name": "Trouble Is"
+      },
+      {
+        "artist": "Ganger",
+        "name": "Styrke"
+      },
+      {
+        "artist": "Barselona",
+        "name": "1 Dag Er Vi 1 Minde"
+      },
+      {
+        "artist": "Kamasi Washington",
+        "name": "Song For Fraser"
+      },
+      {
+        "artist": "Larry Goldings_Jay Bellerose_David Piltch",
+        "name": "Blueberry Hill"
+      },
+      {
+        "artist": "NEIL FRANCES",
+        "name": "Falling for You"
+      }
+    ]
+  },
   "6gQN0txhq9C2qYiOiGx64f": {
     "id": "6gQN0txhq9C2qYiOiGx64f",
     "name": "BOYS 11",
@@ -4086,7 +4282,7 @@
         "name": "Some Kinda Harm"
       },
       {
-        "artist": "King Canyon_Otis McDonald_Eric Krasno_Derek Trucks",
+        "artist": "King Canyon_Otis McDonald_Eric Krasno_Mike Chiavaro_Derek Trucks",
         "name": "Mulholland"
       },
       {
@@ -6671,7 +6867,7 @@
       },
       {
         "artist": "LF SYSTEM",
-        "name": "Afraid to Feel"
+        "name": "Afraid To Feel"
       },
       {
         "artist": "Penguin Cafe",
@@ -6708,6 +6904,26 @@
       {
         "artist": "Aili_Transistorcake",
         "name": "Dansu"
+      },
+      {
+        "artist": "Adrian Quesada_College of Knowledge",
+        "name": "Eso No Lo He Dicho Yo"
+      },
+      {
+        "artist": "Supershy_Tom Misch",
+        "name": "Happy Music"
+      },
+      {
+        "artist": "Supershy_Tom Misch_Vula",
+        "name": "Take My Time"
+      },
+      {
+        "artist": "DJ Dove",
+        "name": "Illusions - 12\" Version"
+      },
+      {
+        "artist": "Loyle Carner_Jordan Rakei",
+        "name": "Ottolenghi"
       }
     ]
   },
@@ -7222,10 +7438,6 @@
     "user": "reneesteinmann",
     "tracks": [
       {
-        "artist": "Leon Bridges",
-        "name": "Coming Home"
-      },
-      {
         "artist": "Marco Tansini",
         "name": "Blues Garage"
       },
@@ -7234,16 +7446,8 @@
         "name": "Perilous Times"
       },
       {
-        "artist": "Snowy White_The White Flames",
-        "name": "Have I Got Blues for You"
-      },
-      {
         "artist": "Melvin Taylor_Lucky Peterson_Titus Williams_Ray \"Killer\" Allison",
         "name": "I 'll Play the Blues for You"
-      },
-      {
-        "artist": "Dawn Brothers_DeWolff",
-        "name": "What Kind of Woman"
       },
       {
         "artist": "Josephien",
@@ -7255,19 +7459,7 @@
       },
       {
         "artist": "Fenton Robinson",
-        "name": "You Don't Know What Love Is"
-      },
-      {
-        "artist": "Snowy White",
-        "name": "I Know What's Coming"
-      },
-      {
-        "artist": "Fenton Robinson",
         "name": "As The Years Go Passing By"
-      },
-      {
-        "artist": "J.J. Cale",
-        "name": "Carry On"
       },
       {
         "artist": "Offthewally",
@@ -7276,10 +7468,6 @@
       {
         "artist": "Jan Rot",
         "name": "Stel Dat Het Zou Kunnen"
-      },
-      {
-        "artist": "Fenton Robinson",
-        "name": "The Getaway"
       },
       {
         "artist": "Andre Hazes",
@@ -7326,14 +7514,6 @@
         "name": "China Girl - 2018 Remaster"
       },
       {
-        "artist": "Jeroen Kant",
-        "name": "Morgenstond"
-      },
-      {
-        "artist": "Snowy White_The White Flames",
-        "name": "Crazy Situation Blues"
-      },
-      {
         "artist": "Gary O'Slide",
         "name": "Monument Valley"
       },
@@ -7344,6 +7524,34 @@
       {
         "artist": "Van Morrison",
         "name": "Into the Mystic - 2013 Remaster"
+      },
+      {
+        "artist": "Geraint Watkins",
+        "name": "Heaven Only Knows"
+      },
+      {
+        "artist": "The Rolling Stones",
+        "name": "Angry"
+      },
+      {
+        "artist": "Dylan LeBlanc",
+        "name": "If the Creek Don't Rise"
+      },
+      {
+        "artist": "Lafayette Leake",
+        "name": "Easy Blues"
+      },
+      {
+        "artist": "Junior Kimbrough",
+        "name": "Feels so Bad - Previously Unreleased Take"
+      },
+      {
+        "artist": "Gregor Hilden_Hans D. Riesop_The Tone Company",
+        "name": "I Wouldn't Tread a Dog"
+      },
+      {
+        "artist": "Dire Straits",
+        "name": "News"
       }
     ]
   },
